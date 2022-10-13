@@ -1,0 +1,54 @@
+/* Default WP Alignment Classes */
+
+.aligncenter,.alignleft,.alignright {
+    display: block;
+    padding: 0;
+}
+
+.aligncenter {
+    float: none;
+    margin: .5em auto 1em;
+}
+
+.alignright {
+    float: right;
+    margin: .5em 0 1em 1em;
+}
+
+.alignleft {
+    float: left;
+    margin: .5em 1em 1em 0;
+}
+
+.wp-caption {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.wp-caption img {
+    display: inline;
+}
+
+.wp-caption p.wp-caption-text {
+    margin: 5px auto 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0.8em;
+	line-height: 1.4;
+    font-style: italic;
+    color: #222222;
+	max-width: 85%;
+}
+
+/* Default WP Alignment Mobile fix */
+@media only screen and (max-width: 500px) {
+	figure.alignleft, img.alignleft, figure.alignright, img.alignright {
+	float:none;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+    }
+	div[id^="attachment_"] {
+		width: auto !important;
+	}
+}
